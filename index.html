@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Hachi+Maru+Pop&family=Pacifico&family=Rubik+Mono+One&family=Rubik+Spray+Paint&family=Stick&display=swap');
+
+        /* темная тема */
+        #theme:checked~p {
+            color: black;
+        }
+        #theme:checked~main {
+            background-color: black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Medicine</h1>
+        <ul>
+            <a href="bolezni.html">
+                <li>Болезни</li>
+            </a>
+            <a href="health.html">
+                <li>Здоровье</li>
+            </a>
+            <a href="medicines.html">
+                <li>Лекарства</li>
+            </a>
+            <a href="news.html">
+                <li>Новости</li>
+            </a>
+            <a href="feedback.html">
+                <li>Связь</li>
+            </a>
+        </ul>
+        <div>
+            <label for="theme">Темная тема</label>
+            <input type="checkbox" id="theme" class="theme">
+        </div>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <article class="AristotelArticle">
+            <div class="AristotelArticleDiv">
+                <p>"Медицина поистине
+                    самое благородное
+                    из всех искусств." - Аристотель</p>
+            </div>
+            <img src="aristotel-2.jpg" alt="" class="aristotel">
+        </article>
+        <article class="LekarArticle">
+            <img src="lekar.png" alt="" class="Lekar">
+            <div class="LekarArticleDiv">
+                <p>Здоровье —
+                    большее богатство</p>
+            </div>
+        </article>
+        <article class="Year">
+            <h2>врач года 2025:</h2>
+            <p>Лилия Басанова</p>
+            <img src="vrachgoda.png" alt="">
+        </article>
+    </main>
+    <footer>
+        <p>Сделал Расуль</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
