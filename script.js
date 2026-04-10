@@ -23,6 +23,7 @@ let h2 = document.querySelector('h2');
 let h3 = document.querySelector('h3');
 let input = document.querySelector('.theme');
 let condition = false;
+let newsP = document.querySelectorAll('.newsP');
 input.addEventListener('click',night);
 function night(){
     if(condition == false){
@@ -32,14 +33,13 @@ function night(){
         pblack.forEach((e)=>{
             e.style.color = "white";
         })
-        newsa1.style.backgroundColor = "black";
-        newsa2.style.backgroundColor = "black";
-        newsa3.style.backgroundColor = "black";
-        newsa4.style.backgroundColor = "black";
         p.forEach((e)=>{
             e.style.color = "white";
         })
         condition = true;
+        newsP.forEach((e)=>{
+            e.style.color = "black";
+        })
     }
     else{
         header.style.backgroundColor = "#00B227";
@@ -48,13 +48,12 @@ function night(){
         pblack.forEach((e)=>{
             e.style.color = "black";
         })
-        newsa1.style.backgroundColor = "white";
-        newsa2.style.backgroundColor = "white";
-        newsa3.style.backgroundColor = "white";
-        newsa4.style.backgroundColor = "white";
         p.forEach((e)=>{
             e.style.color = "black";
         })
         condition = false;
+        newsP.forEach((e)=>{
+            e.style.color = "black";
+        })
     }
 }
